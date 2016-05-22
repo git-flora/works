@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+</head>
+<body>
+<div class="cv-nav">
+	<div class="cv-logo">
+		<h2>FLORA</h2>
+	</div>
+	<ul class="nav-list">
+		<li><a href="#page1">首页</a></li>
+		<li><a href="#page2">介绍</a></li>
+		<li><a href="#page3">技能</a></li>
+		<li><a href="#page4">作品</a></li>
+	</ul>
+</div>
+<div id="fullpage">
+	<div class="section section1">
+		<div class="parts-ball">
+			<img src="img/icon1-1.png" alt="">
+		</div>
+		<div class="cv-intro">
+			<a class="intro-icon"><img src="img/pear.png"></a>
+			<div class="intro-txt">
+			<h2>杨琳</h2>
+			<h2>24岁</h2>
+			<h2>345447866@qq.com</h2>
+			</div>
+		</div>
+		<div class="parts parts1"></div>
+	</div>
+	<div class="section section2">
+	<div class="parts parts-ball1"></div>
+	<div class="parts parts-ball2"></div>
+	<div class="section2-con">
+	<h2><img class="parts-flower" src="img/icon5.png">自我介绍</h2>
+	<hr>
+	<ul class="detail-list">
+		<li>
+			<a href="#"><img src="img/icon4-1.jpg"></a>
+			<h3>学历</h3>
+			<p>本科</p>
+		</li>
+		<li>
+			<a href="#"><img src="img/icon4-2.jpg"></a>
+			<h3>年龄</h3>
+			<p>24岁</p>
+		</li>
+		<li>
+			<a href="#"><img src="img/icon4-3.jpg"></a>
+			<h3>证书</h3>
+			<p>英语六级</p>
+		</li>
+		<li>
+			<a href="#"><img src="img/icon4-4.jpg"></a>
+			<h3>坐标</h3>
+			<p>广州</p>
+		</li>
+	</ul>
+	<div class="cv-detail">
+		<span class="detail-icon1"></span>
+		<span class="detail-icon2"></span>
+		<span class="detail-icon3"></span>
+		<span class="detail-icon4"></span>
+		<p class="detail-para1">毕业于广东技术师范学院2015届电子商务本科</p>
+		<p class="detail-para2">在校期间曾获得学习积极分子奖学金</p>
+		<p class="detail-para3">考取英语六级证书</p>
+		<p class="detail-para4">喜欢前端代码</p>
+	</div>
+	</div>
+	</div>
+	<div class="section section3">
+		<div class="parts-stars"><img src="img/star.png"></div>
+		<span class="parts-shooting"></span>
+		<div class="parts-star1 parts"></div>
+		<div class="parts-star2 parts"></div>
+		<div class="parts-star3 parts"></div>
+		<div class="section3-con">
+			<h2>专业技能</h2>
+			<hr>
+			<ul>
+				<li><img src="img/html.png">
+				<h3>HTML</h3></li>
+				<li><img src="img/css.png">
+				<h3>CSS</h3></li>
+				<li><img src="img/JS.png">
+				<h3>Javascript</h3></li>
+				<li><img src="img/jq.png"><h3>JQuery</h3></li>
+				<li><img src="img/bs.png"><h3>Bootstrap</h3></li>
+			</ul>
+		</div>
+	</div>
+	<div class="section section4">
+	<div class="parts parts-birds1"></div>
+	<div class="parts parts-birds2"></div>
+	<div class="section4-con">
+		<h2>我的作品</h2>
+		<hr>
+		<div class="section4-list">
+			<a href="../works1/index.html" target="_blank"><div class="list-wrap"><img src="img/list1-1.jpg"><div class="annotation">个人博客网站</div></div><p>前端作品1</p></a>
+			<a href="../works2/picweb.html" target="_blank"><div class="list-wrap"><img src="img/list2-1.jpg"><div class="annotation">移动端图片相册</div></div><p>前端作品2</p></a>
+			<a href="../works3/index.html" target="_blank"><div class="list-wrap"><img src="img/list3-1.jpg"><div class="annotation">基于Bootstrap的网页</div></div><p>前端作品3</p></a>
+			<a href="../works4/index.html" target="_blank"><div class="list-wrap"><img src="img/list4-1.jpg"><div class="annotation">电商网站</div></div><p>前端作品4</p></a>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#fullpage").fullpage({
+			anchors:["page1","page2","page3","page4"],
+			navigation:true,
+			navigationPosition:'right',
+			navigationTooltips:["首页","技能","介绍","作品"],
+			afterLoad:function(anchorLink,index){
+					switch(index){
+						case 1:
+							$(".intro-txt").animate({top:"220px",opacity:1},1500);
+						break;
+						case 2:
+							$(".parts-ball1").animate({bottom:"20%"},1000);
+							$(".parts-ball2").animate({top:"32%"},1000);
+							$(".detail-list").animate({opacity:1},1000);
+							$(".detail-para1").animate({top:"25px",opacity:1},800,function(){
+								$(".detail-para2").animate({top:"75px",opacity:1},800,function(){
+									$(".detail-para3").animate({top:"125px",opacity:1},800,function(){
+										$(".detail-para4").animate({top:"175px",opacity:1},800);
+									})
+								})
+							});
+							$(".section2-con>hr").css("animation","hmove 2s ease-in-out forwards");
+							
+						break;
+						case 3:
+							$(".parts-star1").animate({top:"60%",opacity:"1"},700);
+							$(".parts-star2").animate({top:"19%",opacity:"1"},700);
+							$(".parts-star3").animate({top:"50%",opacity:"1"},700);
+							$(".section3-con li img").css("animation","iconScale 1s ease-in-out forwards");
+							$(".section3-con>hr").css("animation","hmove 2s ease-in-out forwards");	
+						break;
+						default:
+							$(".parts-birds1").css("animation","birds 1s ease-in-out forwards");
+							$(".parts-birds2").css("animation","birds 1s ease-in-out forwards");
+							$(".section4-con>hr").css("animation","hmove 2s ease-in-out forwards");
+							$(".section4-list img").css("animation","picMove 1s ease-in-out forwards");							
+
+						break;
+					}
+				
+			},
+			onLeave:function(index,nextIndex,direction){
+					switch(index){
+						case 1:
+							$(".intro-txt").animate({top:"280px",opacity:0},200);
+						break;
+						case 2:
+							$(".parts-ball2").animate({top:"-100px"},1000);
+						break;						
+			}
+
+		}
+	});
+		// $(".nav-list a").click(function(){
+		// 	$(this).addClass("active").parent().siblings().find("a").removeClass("active");
+		// })
+
+		var $anno=$(".annotation");
+		$anno.hide();
+		$(".section4-list>a").hover(function(){
+			var index=$(".section4-list>a").index(this);
+			$anno.eq(index).fadeIn(500);
+			$(".list-wrap img").eq(index).animate({opacity:0.7},500);
+		},function(){
+			var index=$(".section4-list>a").index(this);
+			$anno.eq(index).fadeOut(500);
+			$(".list-wrap img").eq(index).animate({opacity:1},500);
+		})
+		})
+</script>
+
+</body>
+</html>
