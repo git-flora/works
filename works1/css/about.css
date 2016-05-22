@@ -1,0 +1,163 @@
+.maincon {
+	padding-bottom: 25px;
+
+	background: #eee;
+}
+.maincon .wrap {
+	padding-top: 100px;
+	overflow: hidden;
+
+	background: #eee;
+}
+.left {
+	float: left;
+
+	width: 495px;
+
+	background: #fff;
+	padding-bottom: 1000px;
+	margin-bottom: -700px;
+
+	text-align: right;
+}
+.left h1 {
+	font-size: 20px;
+	font-weight: normal;
+}
+.right {
+	float: right;
+
+	width: 480px;
+	padding-bottom: 1000px;
+	margin-bottom: -700px;
+
+	font-size: 14px;
+
+	background: #fff;
+}
+
+.items-name {
+	position: relative;
+
+	height: 270px;
+
+}
+.items-name,
+.items-contact,
+.items-edu,
+.items-practice {
+	padding-top: 120px;
+	padding-right: 70px;
+	box-sizing: border-box;
+}
+.items-name img {
+	position: absolute;
+	top: -90px;
+	right: -90px;
+
+	width: 160px;
+	height: 160px;
+	border: 10px solid #eee;
+	border-radius: 90px;
+}
+
+.items-contact img,
+.items-edu img,
+.items-practice img {
+	position: absolute;
+	right: -55px;
+	top: 0;
+
+	width: 100px;
+	height: 100px;
+	border: 5px solid #eee;
+	border-radius: 55px;
+
+}
+
+.items-contact {
+	position: relative;
+
+	height: 220px;
+}
+.items-edu {
+	position: relative;
+
+	height: 345px;
+}
+.items-time {
+	position: absolute;
+	top: 135px;
+	right: -35px;
+
+}
+
+.items-time div {
+	width: 60px;
+	height: 25px;
+	border: 5px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 35px;
+
+	line-height: 25px;
+	text-align: center;
+
+	background: #fff;
+}
+
+.items-practice {
+	position: relative;
+
+	height: 300px;
+}
+
+.right-name {
+	height: 270px;
+}
+.right-name p {
+	padding-top: 130px;
+	padding-left: 30px;
+	width: 310px;
+
+	text-indent: 2em;
+}
+.right-contact {
+	height: 220px;
+	padding-top: 120px;
+	padding-left: 30px;
+	box-sizing: border-box;
+
+	line-height: 1.7;
+}
+.right-edu {
+	height: 350px;
+	padding-top: 140px;
+	padding-left: 50px;
+	box-sizing: border-box;
+
+}
+.edu-highschool {
+	margin-bottom: 50px;
+}
+.edu-school {
+	margin-bottom: 10px;
+}
+.edu-pro {
+	font-size: 12px;
+	margin-bottom: 28px;
+}
+.right-ca {
+	height: 330px;
+	padding-top: 130px;
+	padding-left: 50px;
+	box-sizing: border-box;
+}
+.ca-company {
+	margin-bottom: 5px;
+}
+.ca-job {
+	margin-bottom: 35px;
+
+	font-size: 12px;
+
+}

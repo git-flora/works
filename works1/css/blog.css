@@ -1,0 +1,317 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+
+.maincon {
+	padding: 20px 0 100px 0;
+
+	background: #eee;
+}
+
+
+.txtList {
+	float: left;
+
+	width: 710px;
+}
+.sidebar {
+	float: right;
+
+	width: 260px;
+}
+
+.txt-items {
+	position: relative;
+
+	padding: 22px 22px 16px 16px;
+	margin-bottom: 10px;
+
+	background: #fff;
+}
+.txt-items h1 {
+
+	font-size: 16px;
+	color: #faa320;
+}
+.txt-items h2 {
+	font-size: 12px;
+	color: #666;
+	padding-bottom: 10px;
+}
+.txt-items p {
+	text-indent: 2em;
+	line-height: 1.7;
+}
+.txt-time {
+	margin-top: 15px;
+
+	color: #999;
+	text-align: right;
+}
+.txt-items ul {
+	position: absolute;
+	left: -50px;
+	top: 20px;
+}
+.txt-items ul li {
+	width: 50px;
+	height: 40px;
+
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+.side-time {
+	background: #faa320;
+}
+.side-type {
+	background: #f8af42;
+}
+
+.page {
+	text-align: center;
+	font-size: 0;
+}
+
+.page a {
+	display: inline-block;
+
+	margin-right: 10px;
+	padding: 0 15px;
+
+	text-align: center;
+	line-height: 35px;
+	font-size: 12px;
+	color: #000;
+
+	background: #fff;
+}
+.page .selected {
+	color: #fff;
+
+	background: #f8af42;
+	cursor: text;
+}
+
+.searchBox {
+	padding: 20px 0 20px 20px;
+	margin-bottom: 10px;
+	overflow: hidden;
+
+	background: #fff;
+}
+.searchBox input {
+	float: left;
+
+	width: 120px;
+	height: 40px;
+	padding-left:50px;
+	border: 1px solid #ddd;
+
+	line-height: 40px;
+
+	background: url(../img/search.png) no-repeat left top;
+}
+.searchBox button {
+	float: left;
+
+	width: 52px;
+	height: 42px;
+	border: 1px solid #ddd;
+
+	line-height: 42px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 24px;
+	color: #fff;
+
+	background: #ddd;
+	cursor: pointer;
+}
+
+.type-list {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+
+}
+
+.type-list a {
+	display: block;
+
+	height: 50px;
+	padding-left: 15px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-left: 5px solid #f6c882;
+	margin-bottom: -1px;
+
+	line-height: 50px;
+
+	background: #fff;
+}
+.type-list a:hover {
+	border-left: 5px solid #faa320;
+}
+.type-list .selected {
+	border-left: 5px solid #faa320;
+}
+
+.date-con {
+	padding: 20px;
+	margin-bottom: 10px;
+
+	background: #fff;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+table,
+tbody,
+tr,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.side-date {
+	overflow: hidden;
+}
+.date-before,
+.date-after,
+.date-now {
+	float: left;
+
+	width: 35px;
+	height: 24px;
+
+	line-height: 24px;
+	text-align: center;
+	font-weight: bold;
+	color: #faa320;
+	font-size: 14px;
+}
+.date-now {
+	width: 150px;
+
+}
+.date-con table {
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.date-con td,
+.date-con th {
+	padding: 8px;
+
+	font-weight: normal;
+
+	background: #fff;
+}
+.date-con tr {
+	padding: 3px;
+	border-bottom: 1px solid #eee;
+}
+.date-con .selected {
+	color: #fff;
+	background: #faa320;
+}
+
+.side-tag {
+	padding: 0 15px 15px 15px;
+	margin-bottom: 10px;
+
+	background: #fff;
+}
+.tag-header {
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #999;
+}
+.tag-con {
+	font: 0 "Microsoft Yahei" Sans-Serif;
+}
+
+.tag-con a {
+	display: inline-block;
+
+	margin-bottom: 5px;
+	margin-right: 5px;
+
+	color: #faa320;
+}
+
+.tag-con .h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.tag-con .h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.tag-con .h3 {
+	font-size: 14px;
+}
+
+
+
+.ranking {
+	padding: 10px 20px;
+
+	background: #fff;
+}
+.ranking-header {
+	font-size: 16px;
+	color: #999;
+
+	margin-bottom: 20px;
+}
+.ranking-items {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.items-num {
+	float: left;
+
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-right: 15px;
+
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+
+	background: #faa320;
+}
+.items-bar {
+	float: left;
+
+	width: 100px;
+	height: 18px;
+	border: 1px solid #faa320;
+	margin-right: 15px;
+
+	background: #fff;
+}
+.bar-run {
+
+	height: 18px;
+
+	background: #faa320;
+}
+
+.items-mes {
+	float: left;
+
+	line-height: 20px;
+}

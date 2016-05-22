@@ -1,0 +1,107 @@
+
+
+.banner>img {
+	display: block;
+	width: 100%;
+}
+.banner .wrap {
+	position: relative;
+
+	height: 0;
+}
+.banner-txt {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	width: 300px;
+	padding: 10px 10px 30px 10px;
+
+	color: #fff;
+
+	background-image: linear-gradient(to bottom,rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%);
+}
+.banner-txt h1 {
+	margin-bottom: 12px;
+
+	font-size: 14px;
+	text-align: right;
+}
+.banner-txt p {
+	text-indent: 2em;
+	font-size: 12px;
+	line-height: 150%;
+}
+
+.maintxt {
+	padding-top: 10px;
+	padding-bottom: 150px;
+
+	background: #e0e0e0;
+}
+.maintxt-con {
+	margin-right: -10px;
+
+	overflow: hidden;
+}
+.maintxt-con li {
+	float: left;
+
+	width: 320px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 999px;
+	margin-bottom: -999px;
+
+	text-align: center;
+
+	background: #fff;
+}
+.maintxt-con p {
+	padding: 15px 30px 25px 30px;
+
+	font-size: 12px;
+	line-height: 170%;
+	text-indent: 2em;
+	text-align: left;
+
+}
+
+.intro {
+	position: relative;
+
+	padding-bottom: 130px;
+
+	background: #fff;
+}
+.intro-icon {
+	position: absolute;
+	left:50%;
+	top: -50px;
+
+	width: 160px;
+	height: 160px;
+	margin-left: -80px;
+	border-radius: 80px; 
+	overflow: hidden;
+}
+.intro h1 {
+	margin: 0;
+	padding-top: 160px;
+	padding-bottom: 40px;
+
+	text-align: center;
+	font: 20px Century Gothic Sans-Serif;
+	color: #000;
+
+}
+.intro p {
+	width: 600px;
+	margin: 0 auto;
+
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 1.5;
+	color: #000;
+}
+

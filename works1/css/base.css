@@ -1,0 +1,113 @@
+body {
+	min-width: 980px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.header {
+	position: relative;
+
+	height: 80px;
+
+	background: #faa320;
+
+}
+.wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+.header .wrap {
+	position: relative;
+
+	height: 80px;
+}
+.logo {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+}
+.nav {
+	position: absolute;
+
+	right: 0;
+	bottom: 10px;
+
+	overflow: hidden;
+
+}
+.nav li {
+	float: left;
+	margin-left: 28px;
+}
+.nav a {
+	font: 14px "宋体" sans-serif;
+	color: #fff;
+}
+.nav .active,
+.nav a:hover {
+	color: red;
+}
+
+.side-icon {
+	position: absolute;
+	right: 10px;
+	bottom: -5px;
+}
+@media screen and (max-width: 980px) {
+	.side-icon {
+		display: none;
+	}
+}
+
+
+
+
+
+
+.footer {
+	background: #000;
+}
+
+.footer-header {
+	border-bottom: 1px solid #fff;
+}
+.footer-header ul {
+	width: 200px;
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+.footer-header li {
+	float: left;
+	margin-left: 22px;
+
+	line-height: 2.5em;
+}
+.footer-header a {
+	color: #fff;
+}
+.footer-con {
+	width: 980px;
+
+	margin: 0 auto;
+	padding: 30px 0 100px 0; 
+
+	overflow: hidden;
+}
+.footer-con dl {
+	float: left;
+
+	width: 196px;
+}
+.footer-con dt {
+	padding-bottom: 20px;
+}
+.footer-con dd a:link {
+	text-decoration: underline;
+	color: #fff;
+	line-height: 1.7em;
+}
