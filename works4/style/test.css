@@ -1,0 +1,7 @@
+.box{width: 500px;border: 1px solid #ccc;margin: 20px auto;overflow: hidden;text-align: center;padding-top: 20px;}
+ul{overflow: hidden;padding-left: 1px;width: 366px;margin: 10px auto;}
+li{float: left;}
+li img{float: left;border: 1px solid #ccc;margin-left: -1px;}
+li img{opacity: 0.5;}
+a.active img{border: 1px solid #2a75f1;opacity: 1;position: relative;}
+

@@ -1,0 +1,10 @@
+html,body,div,a,img,ul,li,h2,p,dl,dt,dd,input,span,h3,i,h4{margin:0;padding:0;}
+em{font-style: normal;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+a{text-decoration:none;color:#666666;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+.fl{float:left;}
+.fr{float:right;}
