@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="script/zepto.min.js"></script>
+	<style type="text/css">
+	body {
+		background: #000;
+	}
+	li {
+		float: left;
+
+		overflow: hidden;
+	}
+	.large {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background: #000;
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<ul id="container" class="clearfix">
+
+	</ul>
+	<div class="large animated fadeIn" id="large-container" style="display: none;">
+		<img id="large-img">
+	</div>
+	<script>
+		var total=15;
+		var zWin=$(window);
+		var zender=function(){
+			var oUl=$("#container");
+			var padding=2;
+			var zWinWidth=zWin.width();
+			var picWid=Math.floor((zWinWidth-padding*3)/4);
+			console.log(zWinWidth);
+			console.log(picWid);
+
+
+			var tmpl="";
+			for(var i=1;i<=total;i++){
+				if(i%4==1){
+					padding=0;
+				}else{
+					padding=2;
+				}
+				var imgSrc="img/web/"+i+".jpg";
+				tmpl+="<li data-no='"+i+"' class='animated bounceIn' style='width:"+picWid+"px;height:"+picWid+"px;padding-left:"+padding+"px;padding-top:2px'><canvas id='cvs_"+i+"'></canvas></li>";
+				var imageObj=new Image();
+				imageObj.index=i;
+				imageObj.onload=function(){
+					var cvs=$("#cvs_"+this.index)[0].getContext("2d");
+					cvs.width=this.width;
+					cvs.height=this.height;
+					cvs.drawImage(this,0,0);
+				}
+				imageObj.src=imgSrc;
+
+			}
+			oUl.html(tmpl);
+
+		}
+		zender();
+
+
+		var $larImg=$("#large-img");	
+		var domImg=$("#large-img")[0];	
+		function loadImg(id,callback){
+			$("#large-container").css({
+				"width":zWin.width(),
+				"height":zWin.height()
+			}).show();
+			var imgSrc="img/web/"+id+".large.jpg";
+			var imgObj=new Image();
+			imgObj.onload=function(){
+				var w=this.width;
+				var h=this.height;
+				var winW=zWin.width();
+				var winH=zWin.height();
+				var realW=winH*w/h;
+				var realH=winW*h/w;
+				var paddingLeft=Math.floor((winW-realW)/2);
+				var paddingTop=Math.floor((winH-realH)/2);
+				$larImg.css({
+					"height":"auto",
+					"width":"auto",
+					"padding-left":0,
+					"padding-top":0
+				})
+				if(h/w>1.2){
+					$larImg.attr("src",imgSrc).css({
+						"height":winH,
+						"padding-left":paddingLeft
+					});
+				}else{
+					$larImg.attr("src",imgSrc).css({
+						"width":winW,
+						"padding-top":paddingTop
+					})
+				}
+			}
+			imgObj.src=imgSrc;
+			callback&&callback();
+		}
+
+
+
+
+		var num=0;
+		$("#container").delegate("li","tap",function(){
+			var id=num=$(this).attr("data-no");
+			loadImg(id);
+		});
+		$("#large-container").tap(function(){
+			$(this).hide();
+		}).swipeRight(function(){
+			num--;
+			if(num<1){
+				num=1;
+			}
+			loadImg(num,function(){
+				domImg.addEventListener("webkitAnimationEnd",function(){
+					$larImg.removeClass("animated bounceInLeft");
+					domImg.removeEventListener("webkitAnimationEnd",false);
+				},false)
+				$larImg.addClass("animated bounceInLeft");
+			});
+		}).swipeLeft(function(){
+			num++;
+			if(num>total){
+				num=total;
+			}
+			loadImg(num,function(){
+				domImg.addEventListener("webkitAnimationEnd",function(){
+					$larImg.removeClass("animated bounceInRight");
+					domImg.removeEventListener("webkitAnimationEnd",false);
+				},false);
+				$larImg.addClass("animated bounceInRight");
+			});
+		})
+		//http://www.cnblogs.com/mqfblog/p/5397282.html
+		//http://www.cnblogs.com/yexiaochai/p/3462657.html
+		//http://www.uc.cn/business/developer/
+
+	</script>
+</body>
+</html>
+
+
+
+
