@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reg</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+	<![endif]-->
+
+</head>
+<body>			
+			<div class="logobar reg-logo">
+			<div class="comWidth">
+				<div class="logo fl">
+					<a href="#"><img src="images/logo.jpg" alt=""></a>
+				</div>
+				<h3>欢迎注册</h3>
+			</div>
+			</div>
+			<!-- logobar-End -->
+			<div class="regBox">
+				<div class="regBox-con">
+				<form method="post" action="" id="form1">
+					<ul>
+						<li><em>账户名：</em><input type="text" class="lo-re-input username" name="username"><span class="tip" name="username"></span></li>
+						<li><em>请设置密码：</em><input type="password" class="lo-re-input userpass" name="userpass"><span class="tip"></span></li>
+						<li><em>请确认密码：</em><input type="password" class="lo-re-input comfpass" name="comfpass"><span class="tip"></span></li>
+						<li><em>邮箱：</em><input type="text" class="lo-re-input email" name="email"><span class="tip"></span></li>
+						<li><em>手机号码：</em><input type="text" class="lo-re-input phonenum" name="phonenum"><span class="tip"></span></li>
+						<li class="read-agree"><em>&nbsp;</em><input type="checkbox" checked="checked" id="read"><label for="read">我已阅读并同意《用户注册协议》</label></li>
+						<li><em>&nbsp;</em><input type="submit" class="subm-btn" value="提交"></li>
+					</ul>
+				</form>
+			
+				</div>
+				
+			</div>
+			<!-- loginBox-End -->
+	<div class="hr_25"></div>
+	<div class="footer">
+		<div class="comWidth">
+			<p><a href="#">慕课简介</a> | <a href="#">慕课公告</a> |  <a href="#">招纳贤士</a> | <a href="#">联系我们</a> | 客服热线：400-675-1234</p>
+			<p>Copyright &copy; 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+			<p class="weblogo"> <a href="#"><img src="images/webLogo.jpg" alt=""></a><a href="#"><img src="images/webLogo.jpg" alt=""></a><a href="#"><img src="images/webLogo.jpg" alt=""></a><a href="#"><img src="images/webLogo.jpg" alt=""></a>
+			</p>
+		</div>
+	</div>
+	<!-- footer-End -->
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery.validate.js"></script>
+        <script type="text/javascript" src="http://www.imooc.com/data/jquery.validate.messages_cn.js"></script>
+        <script type="text/javascript">
+        $(function () {
+            $("#form1").validate({
+                /*自定义验证规则*/
+                rules:{
+                    username:{ 
+                    	required:true,
+                    	minlength:6,
+                    	maxlength:18 
+                    },
+                    userpass:{ 
+                    	required:true,
+                    	minlength:10,
+                    	maxlength:18 
+                    },
+                    comfpass:{
+                    	required:true,
+                    	minlength:10,
+                    	maxlength:18                     	
+                    },
+                    email:{
+                    	required:true,
+                    	email:true
+                    },
+                    phonenum:{
+                    	number:true
+                    }
+                },
+				messages: { 
+                	username: { 
+                    	required: "请输入用户名！",
+                    	minlength: "用户名需填写6-18位字符",　
+                    	maxlength: "用户名需填写6-18位字符" 　
+                	},
+                	userpass: {
+                		required: "请输入密码！",
+                		minlength: "密码需10-18位字符",
+                		maxlength: "密码需10-18位字符"
+                	},
+                	comfpass: {
+                		required: "请输入密码！",
+                		minlength: "密码需10-18位字符",
+                		maxlength: "密码需10-18位字符"
+                	},
+	                email:{
+	                    required:"请输入邮箱地址!",
+	                    email:"请输入正确格式的邮箱地址"　　
+	                },
+	                phonenum:{
+	                	number:"手机号码只能是数字"
+	                }
+
+	            },
+                /*错误提示位置*/
+                errorPlacement:function(error,element){
+                    error.appendTo(element.siblings(".tip"));
+                }
+            });
+        })
+        </script>
+</body>
+</html>
