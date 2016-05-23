@@ -130,7 +130,8 @@
 		$("#container").delegate("li","tap",function(){
 			var id=num=$(this).attr("data-no");
 			loadImg(id);
-			document.addEventListener('touchmove', stopPrevent, false)
+			document.addEventListener('touchmove', stopPrevent, false)；
+			console.log("a");
 		});
 		function stopPrevent(e) {
 			e.preventDefault();
