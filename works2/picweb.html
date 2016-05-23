@@ -127,13 +127,13 @@
 
 
 		var num=0;
-		$("#container").delegate("li","tap",function(){
+		$("#container").delegate("li","click",function(){
 			var id=num=$(this).attr("data-no");
 			loadImg(id);
 			console.log("a");
 		});
 
-		$("#large-container").tap(function(){
+		$("#large-container").click(function(){
 			$(this).hide();
 		}).swipeRight(function(){
 			num--;
