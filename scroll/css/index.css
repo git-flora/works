@@ -667,3 +667,12 @@ a.intro-icon:hover {
 	transform: scale(1,1);		
 	}
 }
+
+
+.tooltip {
+	position: absolute;
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
