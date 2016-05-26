@@ -3,7 +3,21 @@ $(function(){
 	$oMore.hide();
 	var $oFooter=$(".footer");
 	$oFooter.hide();
+
+	var $aImg=$(".pic img");
+	var count=0;
+	for(var i=0;i<$aImg.length;i++){
+	var newImg=new Image();
+
+	newImg.src= $aImg.eq(i).attr("src");
+	newImg.onload=function(){
+		count++;
+	if(count==$aImg.length){
 	fallWater("main","box");
+	}
+	}
+	}
+
 	var $oParent=$("#main");
 	var dataInt={"data":[{"src":"1.jpg"},{"src":"2.jpg"},{"src":"3.jpg"},{"src":"4.jpg"},{"src":"5.jpg"},{"src":"6.jpg"},{"src":"7.jpg"},{"src":"8.jpg"},{"src":"9.jpg"},{"src":"10.jpg"},{"src":"11.jpg"},{"src":"12.jpg"},{"src":"13.jpg"},{"src":"14.jpg"}]};
 	var num=0;
