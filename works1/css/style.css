@@ -19,7 +19,14 @@
 
 	color: #fff;
 
+
+
 	background-image: linear-gradient(to bottom,rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%);
+	background: -moz-linear-gradient(top,rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,255,255,0.9)), to(rgba(255,255,255,0.1)));  
+	background: -o-linear-gradient(top,rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+	filter: 
+	progid:DXImageTransform.Microsoft.gradient(startcolorstr=#e5ffffff,endcolorstr=#19ffffff,gradientType=0);
 }
 .banner-txt h1 {
 	margin-bottom: 12px;
@@ -84,6 +91,15 @@
 	margin-left: -80px;
 	border-radius: 80px; 
 	overflow: hidden;
+	behavior:url(css/PIE.htc);
+}
+.intro-icon img {
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	position: relative;
+	z-index: 10;
+	behavior:url(css/PIE.htc);	
 }
 .intro h1 {
 	margin: 0;
