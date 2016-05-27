@@ -18,6 +18,7 @@ body {
 	overflow: hidden;
 
 	background: rgba(125,125,125,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c7D7D7D,endColorstr=#4c7D7D7D);
 
 }
 .cv-logo {
@@ -78,9 +79,10 @@ body {
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+	/*transition: all .5s ease-in-out;*/
 }
 a.intro-icon:hover {
+
 	box-shadow: 0 0 7px 4px rgba(241,141,133,1);	
 }
 
@@ -186,9 +188,18 @@ a.intro-icon:hover {
 	display: inline-block;
 	width: 120px;
 	height: 120px;
+	position: relative;
+	z-index: 10;
 
+	background-color: white;
+
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-o-border-radius: 60px;
+	-ms-border-radius: 60px;
 	border-radius: 60px;
 	overflow: hidden;
+	behavior:url(css/PIE.htc);
 
 	-moz-transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
@@ -208,7 +219,16 @@ a.intro-icon:hover {
 	-ms-transition: all .5s ease-in-out ;
 	transition: all .5s ease-in-out ;
 }
+.detail-list a img {
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-o-border-radius: 60px;
+	-ms-border-radius: 60px;
+	border-radius: 60px;
+	behavior:url(css/PIE.htc);	
+}
 .detail-list a:hover {
+
 	-moz-transform: rotate(1turn);
 	-webkit-transform: rotate(1turn);
 	-o-transform: rotate(1turn);
@@ -222,15 +242,26 @@ a.intro-icon:hover {
 	box-shadow: 0 0 7px 4px rgba(241,141,133,1);
 }
 .detail-list {
+	position: relative;
+	z-index: 10;	
+
 	margin-top: 20px;
 	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
 	border-radius: 10px;
+	behavior:url(css/PIE.htc);
 
 	overflow: hidden;
 	text-align: center;
 
+/*
 	background-color: rgba(160,160,180,0.6);
-	opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99A0A0B4,endColorstr=#99A0A0B4);*/
+
+	background: #87A7A8;
 }
 .detail-list li {
 	float: left;
@@ -488,12 +519,12 @@ a.intro-icon:hover {
 .section3-con ul {
 	margin-top: 45px;
 	padding: 20px;
-	border-radius: 15px;
 	height: 180px;
 	box-sizing: border-box;
 
 	overflow: hidden;
 	background-color: rgba(255,255,255,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff,endColorstr=#33ffffff);
 }
 .section3-con li {
 	float: left;
@@ -502,7 +533,7 @@ a.intro-icon:hover {
 
 }
 .section3-con li img {
-	-webkit-transform-origin: right bottom;
+/*	-webkit-transform-origin: right bottom;
 	-moz-transform-origin: right bottom;
 	-ms-transform-origin: right bottom;
 	-o-transform-origin: right bottom;
@@ -512,7 +543,11 @@ a.intro-icon:hover {
 	-moz-transform: scale(0,0);
 	-ms-transform: scale(0,0);
 	-o-transform: scale(0,0);
-	transform: scale(0,0);
+	transform: scale(0,0);*/
+
+	width: 0;
+	height: 0;
+	opacity: 0;
 	
 }
 
@@ -544,11 +579,12 @@ a.intro-icon:hover {
 
 	background-position: 0 -2660px;
 
-	-webkit-transform: scale(1.3,1.3);
+
+/*	-webkit-transform: scale(1.3,1.3);
 	-moz-transform: scale(1.3,1.3);
 	-o-transform: scale(1.3,1.3);
 	-ms-transform: scale(1.3,1.3);
-	transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);*/
 
 }
 .parts-birds2 {
@@ -561,19 +597,19 @@ a.intro-icon:hover {
 
 	background-position: right -2660px;
 
-	-webkit-transform: scale(1.3,1.3);
+/*	-webkit-transform: scale(1.3,1.3);
 	-moz-transform: scale(1.3,1.3);
 	-o-transform: scale(1.3,1.3);
 	-ms-transform: scale(1.3,1.3);
-	transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);*/
 }
-@keyframes birds{
+/*@keyframes birds{
 	from{
 	transform: scale(1.3,1.3);		
 	}to{
 	transform: scale(1,1);			
 	}
-}
+}*/
 
 .section4-con {
 	position: absolute;
@@ -628,11 +664,11 @@ a.intro-icon:hover {
 .section4-list img {
 	display: block;
 
-	-webkit-transform: scale(1.3,1.3);
+/*	-webkit-transform: scale(1.3,1.3);
 	-moz-transform: scale(1.3,1.3);
 	-o-transform: scale(1.3,1.3);
 	-ms-transform: scale(1.3,1.3);
-	transform: scale(1.3,1.3);
+	transform: scale(1.3,1.3);*/
 }
 
 .list-wrap {
@@ -653,6 +689,7 @@ a.intro-icon:hover {
 	/*font-weight: 700;*/
 
 	background-color: rgba(254,120,117,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFE7875,endColorstr=#7FFE7875);
 }
 
 
@@ -660,19 +697,28 @@ a.intro-icon:hover {
 
 
 
-@keyframes picMove{
+/*@keyframes picMove{
 	from{
 	transform: scale(1.3,1.3);		
 	}to{
 	transform: scale(1,1);		
 	}
-}
+}*/
+
 
 
 .tooltip {
 	position: absolute;
+
 	color: #000;
 	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
+}
+
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	behavior:url(css/PIE.htc);	
 }
