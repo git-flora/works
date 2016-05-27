@@ -6,6 +6,12 @@ html,body {
 
 body {
 	padding-top: 50px;
+
+	 background-image: url(../images/banner1.jpg);
+	 background-size: cover;
+	 background-attachment: fixed;
+	 background-repeat: no-repeat;
+	 background-position: center center;
 }
 .feature img {
 	width: 100%;
@@ -20,8 +26,8 @@ body {
 	background-color: #000;
 }
 
-.carousel {
-	margin-bottom: 60px;
+.wrap-list {
+	padding-top: 60px;
 }
 
 .item img {
@@ -56,11 +62,11 @@ body {
 .bl-banner {
 	 min-height: 100%;
 	 position: relative;
-	 background-image: url(../images/banner1.jpg);
+/*	 background-image: url(../images/banner1.jpg);
 	 background-size: cover;
 	 background-attachment: fixed;
 	 background-repeat: no-repeat;
-	 background-position: center center;
+	 background-position: center center;*/
 }
 
 .bl-banner-wrap {
@@ -128,15 +134,16 @@ body {
 
 .bl-footer-bottom {
 	height: 50px;
+	padding: 0 40px;
 
 	line-height: 50px;
+	color: #fff;
 
 	background: #222C38;
 }
 
-.bl-footer-bottom {
-	color: #fff;
-	padding: 0 40px;
+.bl-footer-bottom p {
+	margin-bottom: 0;
 }
 
 
@@ -191,4 +198,9 @@ body {
 		padding: 0;
 		border-radius: 0;
 	}
+}
+
+
+.wrap-container {
+	background: #fff;
 }
