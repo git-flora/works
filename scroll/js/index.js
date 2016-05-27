@@ -27,14 +27,22 @@ $(function(){
 						$(".parts-star1").animate({top:"60%",opacity:"1"},700);
 						$(".parts-star2").animate({top:"19%",opacity:"1"},700);
 						$(".parts-star3").animate({top:"50%",opacity:"1"},700);
-						$(".section3-con li img").css("animation","iconScale 1s ease-in-out forwards");
+						$(".section3-con li img").animate({
+							width:"87px",
+							height:"100px",
+							opacity:"1"
+						},1000);
 						$(".section3-con>hr").css("animation","hmove 2s ease-in-out forwards");	
 					break;
 					default:
-						$(".parts-birds1").css("animation","birds 1s ease-in-out forwards");
-						$(".parts-birds2").css("animation","birds 1s ease-in-out forwards");
-						$(".section4-con>hr").css("animation","hmove 2s ease-in-out forwards");
-						$(".section4-list img").css("animation","picMove 1s ease-in-out forwards");							
+						// $(".parts-birds1").css("animation","birds 1s ease-in-out forwards");
+						// $(".parts-birds2").css("animation","birds 1s ease-in-out forwards");
+						// $(".parts-birds1").animate({
+						// 	width:"458px",
+						// 	height:"331px"
+						// },1000);
+						// $(".section4-con>hr").css("animation","hmove 2s ease-in-out forwards");
+						// $(".section4-list img").css("animation","picMove 1s ease-in-out forwards");							
 
 					break;
 				}
@@ -63,12 +71,12 @@ $(function(){
 	$anno.hide();
 	$aList.hover(function(){
 		var index=$aList.index(this);
-		$anno.eq(index).fadeIn(500);
-		$aImg.eq(index).animate({opacity:0.7},500);
+		$anno.eq(index).stop(false,false).fadeIn(300);
+		$aImg.eq(index).stop(false,false).animate({opacity:0.7},300);
 	},function(){
 		var index=$aList.index(this);
-		$anno.eq(index).fadeOut(500);
-		$aImg.eq(index).animate({opacity:1},500);
+		$anno.eq(index).stop(false,false).fadeOut(300);
+		$aImg.eq(index).stop(false,false).animate({opacity:1},300);
 	});
 
 
