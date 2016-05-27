@@ -9,13 +9,13 @@ $(function(){
 	for(var i=0;i<$aImg.length;i++){
 	var newImg=new Image();
 
-	newImg.src= $aImg.eq(i).attr("src");
 	newImg.onload=function(){
 		count++;
 	if(count==$aImg.length){
 	fallWater("main","box");
 	}
 	}
+	newImg.src= $aImg.eq(i).attr("src");
 	}
 
 	var $oParent=$("#main");
@@ -72,6 +72,26 @@ function fallWater(parent,children){
 			hArr.push($(this).innerHeight());
 		}else{
 			var minH=Math.min.apply(null,hArr);
+
+
+		if(!Array.indexOf)
+		{
+		    Array.prototype.indexOf = function(obj)
+		    {              
+		        for(var i=0; i<this.length; i++)
+		        {
+		            if(this[i]==obj)
+		            {
+		                return i;
+		            }
+		        }
+		        return -1;
+		    }
+		}
+
+
+
+
 			var index=hArr.indexOf(minH);
 			$(value).css({
 				"position":"absolute",
