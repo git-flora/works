@@ -2,11 +2,19 @@ $(function(){
 	//列表项
 	var $aList=$(".shopcat-show>dl");
 	$aList.hover(function(){
+		var index=$aList.index(this);
 		$(this).addClass("cur");
 		$(this).find(".shopcat-brand").css("display","block");
+		if(index==$aList.length-1){
+			$(this).css("border-bottom","1px solid #fff");
+		}
 	},function(){
+		var index=$aList.index(this);
 		$(this).removeClass("cur");
 		$(this).find(".shopcat-brand").css("display","none");
+		if(index==$aList.length-1){
+			$(this).css("border-bottom","1px solid #3487F2");
+		}
 	})
 	//banner切换
 	var $aBtn=$(".bannernum a");
@@ -51,6 +59,8 @@ $(function(){
 	}
 })
 
+
+//热销滚动条
 $(function(){
 	var $aLi=$(".hotsale-roll li");
 	var $oUl=$(".hotsale-roll ul");
