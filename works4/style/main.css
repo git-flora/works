@@ -157,6 +157,9 @@
 	height: 16px;
 	margin-right: 10px;
 	border-radius: 8px;
+	behavior:url(style/PIE.htc);
+	position: relative;
+	z-index: 10;
 
 	background: #fff;
 }
@@ -185,6 +188,7 @@
 }
 a.banner-btn:hover {
 	background: rgba(0,0,0,.2);	
+	behavior:url(style/PIE.htc);
 }
 .banner-leftBtn {
 	left: 30px;
@@ -242,10 +246,10 @@ a.banner-btn:hover {
 
 	background: #fff;
 }
-.hotsale-header li:last-child a {
+.hotsale-header .last-li a {
 	border-right: none;
 }
-.hotsale-header li:last-child .active {
+.hotsale-header .last-li .active {
 	border-right: 1px solid #4593FD;
 	width: 72px;	
 } 
@@ -394,7 +398,7 @@ a.banner-btn:hover {
 .prolist-con li{width: 25%;float: left;*width: 24.9%;}
 .proimg{height: 170px;}
 .proimg img{height: 170px;}
-.prolist-con{margin-bottom: 10px;overflow: hidden;}
+.prolist-con{margin-bottom: 10px;overflow: hidden;width: 100%;}
 .prolist-con p{line-height: 20px;}
 .prolist-con a{color: black;}
 .prolist-con a:hover{text-decoration: underline;}
@@ -433,6 +437,9 @@ a.banner-btn:hover {
 
 /*screenlist*/
 .screenlist li{width: 33.3%;position: relative;}
+.screenlist ul {
+	overflow: hidden;
+}
 .shopcar-item{display: inline-block;height: 22px;line-height: 22px;border: 1px solid #C3D5E7;padding: 0 6px 0 23px;background: url(../images/icon/car.jpg) no-repeat 6px center;margin-top: 4px;}
 .hot{width: 51px;height: 52px;display: inline-block;position: absolute;top: 0;right: 0;background: url(../images/icon/hot.jpg);}
 
@@ -695,5 +702,5 @@ a.banner-btn:hover {
 .read-agree input{margin-right: 2px;}
 .read-agree{margin-bottom: 35px;}
 /*.subm-btn{width: 272px;height: 37px;background: url(../images/icon/submit.jpg) no-repeat;cursor: pointer;}*/
-.subm-btn{width: 272px;height: 37px;cursor: pointer;background-image: linear-gradient(to bottom,rgba(88,88,88,0.3) 0%,rgba(88,88,88,0.5) 50%,rgba(88,88,88,0.7) 100%);font-size: 24px;color: #fff;}
-.subm-btn:hover{background-image: linear-gradient(to bottom,rgba(29,122,217,0.3) 0%,rgba(29,122,217,0.5) 50%,rgba(29,122,217,0.7) 100%);}
+.subm-btn{width: 272px;height: 37px;cursor: pointer;font-size: 24px;color: #fff;background: #888888;}
+.subm-btn:hover{background: #1D7AD9;}
