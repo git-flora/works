@@ -226,6 +226,8 @@ a.intro-icon:hover {
 	-ms-border-radius: 60px;
 	border-radius: 60px;
 	behavior:url(css/PIE.htc);	
+	position: relative;
+	z-index: 10;
 }
 .detail-list a:hover {
 
