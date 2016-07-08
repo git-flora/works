@@ -118,10 +118,9 @@ body {
 .list-img {
   float: left;
   margin-left: 0.51563rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.46875rem;
+  height: 2.46875rem; 
   border: 1px solid #e4e4e4;
-  box-sizing: border-box;
   text-align: center; }
 
 .list-img img {
