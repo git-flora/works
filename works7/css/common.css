@@ -1,0 +1,596 @@
+body,div,span,h1,h2,h3,h4,h5,h6,a,img,ul,dl,dt,dd,i,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+i{
+  font-style: normal;
+}
+b{
+  font-weight: normal;
+}
+body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  vertical-align: baseline;
+  background-color: #f4f4f4;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+.iconfont {
+  position: relative;
+  display: inline-block;
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  line-height: 1;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
+
+
+
+/*字体文件类*/
+.icon-favorfill:before { content: "\e623"; }
+.icon-favor:before { content: "\e624"; }
+.icon-dingwei:before { content: "\e601"; }
+.icon-right:before { content: "\e602"; }
+.icon-order:before { content: "\e603"; }
+.icon-right1:before { content: "\e61e"; }
+.icon-dot-more:before { content: "\e62d"; }
+.icon-shengyin:before { content: "\e60a"; }
+.icon-yuan:before { content: "\e604"; }
+.icon-gouxuan:before { content: "\e62c"; }
+.icon-right2:before { content: "\e605"; }
+.icon-iconfontsousuo:before { content: "\e606"; }
+.icon-jia:before { content: "\e61d"; }
+.icon-shouye:before { content: "\e607"; }
+.icon-iconfontfenlei:before { content: "\e608"; }
+.icon-wuliu2:before { content: "\e600"; }
+.icon-danxuankuang:before { content: "\e60b"; }
+.icon-weixin:before { content: "\e60c"; }
+.icon-Trash:before { content: "\e609"; }
+.icon-cha:before { content: "\e60d"; }
+.icon-iconfontyue:before { content: "\e60e"; }
+.icon-aixin:before { content: "\e60f"; }
+.icon-iconfontfenleizhuanhuan:before { content: "\e610"; }
+.icon-cha1:before { content: "\e611"; }
+.icon-fukuan:before { content: "\e628"; }
+.icon-dingdanliebiao:before { content: "\e618"; }
+.icon-gouwuche:before { content: "\e612"; }
+.icon-gouwuche1:before { content: "\e61f"; }
+.icon-shouji:before { content: "\e613"; }
+.icon-iconfontfenlei1:before { content: "\e614"; }
+.icon-fankui:before { content: "\e629"; }
+.icon-geren:before { content: "\e615"; }
+.icon-iconfontweixin:before { content: "\e627"; }
+.icon-yuan1:before { content: "\e61c"; }
+.icon-duihuakuang:before { content: "\e622"; }
+.icon-iconfontfenlei2:before { content: "\e616"; }
+.icon-sanjiaoxing:before { content: "\e62a"; }
+.icon-shengyin1:before { content: "\e621"; }
+.icon-fire:before { content: "\e617"; }
+.icon-wodedingdan:before { content: "\e625"; }
+.icon-duihuakuangzhuanhuan:before { content: "\e619"; }
+.icon-iconfontgou:before { content: "\e61a"; }
+.icon-iconfontkefu:before { content: "\e61b"; }
+.icon-yemianxiaozhushougongdandengji:before { content: "\e626"; }
+.icon-left:before { content: "\e620"; }
+.icon-sanjiaoxing-copy:before { content: "\e62b"; }
+/*字体文件类*/
+
+
+/*动画*/
+
+.animated {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+
+/*垂直动画*/
+
+
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    visibility: visible
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    visibility: visible
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp
+}
+
+@-webkit-keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0)
+  }
+}
+
+@keyframes slideOutDown {
+  0% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+  }
+
+  100% {
+    visibility: hidden;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0)
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown
+}
+
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}
+
+
+.btn {
+  display: inline-block;
+  width:100%;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px
+}
+
+
+
+
+
+.btn.active,.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+
+
+
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc
+}
+
+
+
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad
+}
+
+.btn-default.active,.btn-default:active,.open>.dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad
+}
+
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4
+}
+
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c
+}
+
+.btn-success.active,.btn-success:active,.open>.dropdown-toggle.btn-success {
+  background-image: none
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da
+}
+
+.btn-info.active,.btn-info:active,.open>.dropdown-toggle.btn-info {
+  background-image: none
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236
+}
+
+.btn-warning.active,.btn-warning:active,.open>.dropdown-toggle.btn-warning {
+  background-image: none
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #f33737;
+  border-color: #f33737
+}
+
+
+.btn-danger.active,.btn-danger:active,.open>.dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #f33737;
+  border-color: #f33737
+}
+
+
+.ov-hi{
+  overflow: hidden;
+}
+.bg-white{
+  background-color: #fff;
+}
+
+.f8{
+  font-size: 8px;
+}
+.f11{
+  font-size: 11px;
+}
+.f12{
+  font-size: 12px;
+}
+.f13{
+  font-size: 13px;
+}
+.f14{
+  font-size: 14px;
+}
+.f15{
+  font-size: 15px;
+}
+.f16{
+  font-size: 16px;
+}
+.f18{
+  font-size: 18px;
+}
+.f20{
+  font-size: 20px;
+}
+.f24{
+  font-size: 24px;
+}
+.f26{
+  font-size: 26px;
+}
+.f14-rem{
+  font-size: 0.21875rem;
+}
+.f18-rem{
+  font-size: 0.28125rem;
+}
+.f26-rem{
+  font-size: 0.40625rem;
+}
+.f20-rem{
+  font-size: 0.3125rem;
+}
+.f22-rem{
+  font-size: 0.34375rem;
+}
+.f24-rem{
+  font-size: 0.375rem;
+}
+.f28-rem{
+  font-size: 0.4375rem;
+}
+.f30-rem{
+  font-size: 0.46875rem;
+}
+.f32-rem{
+  font-size: 0.5rem
+}
+.f40-rem{
+  font-size: 0.625rem;
+}
+.f44-rem{
+  font-size: 0.6875rem;
+}
+.f48-rem{
+  font-size: 0.75rem;
+}
+.f52-rem{
+  font-size: 0.8125rem;
+}
+
+.f60-rem{
+  font-size: 0.9375rem;
+}
+.f64-rem{
+  font-size: 1rem;
+}
+.f74-rem{
+  font-size: 1.15625rem;
+}
+.fy91{
+  color: rgb( 145, 145, 145 );
+}
+.fy7f{
+  color: #ff7f00;
+}
+.color-white{
+  color: #fff;
+}
+.color-gray91{
+  color: rgb( 145, 145, 145 );
+}
+.color-grayc6{
+  color: #c6c6c6;
+}
+.color-gray30{
+  color: rgb( 48, 48, 48 );
+}
+.color-gray99{
+  color: #999;
+}
+.color-grayccc{
+  color: #ccc;
+}
+.color-orangef7{
+  color: #ff7f00;
+}
+.color-orangefa0{
+  color: rgb( 255, 170, 0 )
+}
+.color-orangeff9{
+  color: #ff9500;
+}
+.color-blue{
+  color: #00aaff;
+}
+.color-green{
+  color: #65cc29;
+}
+.color-green8a{
+  color: #8ae62e;
+}
+.color-gray5e{
+  color: rgb( 94, 94, 94 );
+}
+.color-gray99{
+  color: rgb( 153, 153, 153 );
+}
+.color-garyccc{
+  color: #ccc;
+}
+.color-grayab{
+  color: #ababab;
+}
+.color-grayc7{
+  color: #c7c7c7;
+}
+.color-black03{
+  color: #030303;
+}
+.color-black30{
+  color: #303030;
+}
+.color-red{
+  color: #9f0404;
+}
+.color-redbb0{
+  color: #bb0606;
+}
+.color-redbc0{
+  color: #bc0a0a;
+}
+.color-redf43{
+  color: #ff4433;
+}
+.color-rede0{
+  color: #e01515;
+}
+.color-redf9c{
+  color: #f9ccd6;
+}
+.backg-red{
+ background-color: #9c2324!important;
+}
+.backg-gary96{
+  background-color: #969696!important;
+}
+.backg-orange{
+  background-color: #ffaa00!important;
+}
+.backg-blue{
+  background-color: #00e6e6!important;
+}
+.backg-garya0{
+  background-color: #a0a0a0!important;
+}
+.backg-green{
+  background-color: #00e686!important;
+}
+.backg-rede6{
+  background-color: #e60067!important;
+}
+.backg-garyf6{
+  background-color: #f6f6f6!important;
+}
+.backg-black3{
+  background-color: #333!important;
+}
+.backg-redbc3{
+  background-color: #bc0a0a!important;
+}
+.fyfa0{
+  color: #ffaa00;
+}
+.fy999{
+  color: #999;
+}
+.fy666{
+  color:#666;
+}
+.fy5e{
+  color:#5e5e5e;
+}
+.tx-cen{
+  text-align: center;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+
+
+/*头部*/
+.top-left{
+  display: block;
+  background-color: #bb0606;
+  height: 0.78125rem;
+  line-height: 0.8125rem;
+  text-align: center;
+  width: 0.875rem;
+  font-size: 0.5rem;
+  color: #fff;
+  margin: 0.25rem 0 0.375rem 0.25rem;
+}
+.top-txt{
+  height: 1.28125rem;
+  line-height: 1.28125rem;
+  font-size: 0.5rem;
+  color: #5e5e5e;
+}
+.top-cen{
+  text-align: center;
+}
+/*头部*/
+
+/*输入框的默认颜色*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #c6c6c6;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #c6c6c6;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #c6c6c6;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #c6c6c6;
+}
+/*输入框的默认颜色结束*/
+
+@media screen and (min-width: 640px){
+  body{
+    /*width: 640px !important;*/
+    margin: 0 auto;
+  }}
+
