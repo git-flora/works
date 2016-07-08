@@ -63,8 +63,8 @@ body {
 .con-top {
   height: 1.40625rem;
   box-sizing: border-box;
-  border-top: 0.01563rem solid #e6e6e6;
-  border-bottom: 0.01563rem solid #c3c3c3;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #c3c3c3;
   background: #f4f4f4; }
 
 .allselected,
@@ -113,14 +113,14 @@ body {
   margin: 0 0.28125rem 0 0.03125rem;
   height: 3.14063rem;
   box-sizing: border-box;
-  border-bottom: 0.01563rem solid #c8c8c8; }
+  border-bottom: 1px solid #c8c8c8; }
 
 .list-img {
   float: left;
   margin-left: 0.51563rem;
   width: 2.5rem;
   height: 2.5rem;
-  border: 0.01563rem solid #e4e4e4;
+  border: 1px solid #e4e4e4;
   box-sizing: border-box;
   text-align: center; }
 
@@ -149,7 +149,7 @@ body {
   width: 1.5rem;
   height: 0.5rem;
   box-sizing: border-box;
-  border: 0.01563rem solid #e2e2e2;
+  border: 1px solid #e2e2e2;
   margin-right: 0.25rem;
   font-size: 0.34375rem;
   color: #919191;
@@ -167,7 +167,7 @@ body {
   float: left;
   width: 42%;
   height: 0.625rem;
-  border: 0.01563rem solid #363638;
+  border: 1px solid #363638;
   border-radius: 0.0625rem;
   line-height: 0.625rem;
   font-size: 0; }
@@ -189,8 +189,8 @@ body {
   width: 39.2%;
   height: 100%;
   vertical-align: top;
-  border-left: 0.01563rem solid #000;
-  border-right: 0.01563rem solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
   box-sizing: border-box;
   text-align: center;
   font-size: 0.40625rem; }
