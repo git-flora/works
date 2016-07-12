@@ -83,19 +83,23 @@ $(function(){
 	//第四屏二维码效果
 	var x=5;
 	var y=5;
-	$aList.eq(1).hover(function(e){
-		$oDiv=$('<div class="tooltip"><img src="http://i4.buimg.com/e972c3255d83fa37.png" alt="tooltip" style="width:160px"><p style="color:#000">移动端手机相册</p></div>');
-		$(".section4").append($oDiv);
-		$(".tooltip").css({
-			"left":x+e.pageX+"px",
-			"top":y+e.pageY+"px"
-		})
-	},function(){
-		$(".tooltip").remove();
-	}).mousemove(function(e){
-		$(".tooltip").css({
-			"left":x+e.pageX+"px",
-			"top":y+e.pageY+"px"		
-		})
-	});
+	// $aList.eq(1).hover(function(e){
+	// 	$oDiv=$('<div class="tooltip"><img src="http://i4.buimg.com/e972c3255d83fa37.png" alt="tooltip" style="width:160px"><p style="color:#000">移动端手机相册</p></div>');
+	// 	$(".section4").append($oDiv);
+	// 	$(".tooltip").css({
+	// 		"left":x+e.pageX+"px",
+	// 		"top":y+e.pageY+"px"
+	// 	})
+	// },function(){
+	// 	$(".tooltip").remove();
+	// }).mousemove(function(e){
+	// 	$(".tooltip").css({
+	// 		"left":x+e.pageX+"px",
+	// 		"top":y+e.pageY+"px"		
+	// 	})
+	// });
+
+	$aList.eq(1).click(function(){
+		$("#list-more").show();
+	})
 })
