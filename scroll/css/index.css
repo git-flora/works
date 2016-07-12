@@ -630,10 +630,11 @@ a.intro-icon:hover {
 }
 
 .section4-list {
+	position: relative;
 	margin-top: 30px;
 }
 
-.section4-con a {
+.section4-list>a {
 	display: inline-block;
 
 	width: 240px;
@@ -649,7 +650,7 @@ a.intro-icon:hover {
 	-ms-transition: box-shadow 0.3s;
 	transition: box-shadow 0.3s;
 }
-.section4-con a:hover {
+.section4-list>a:hover {
 	box-shadow: -2px 0px 5px #e0e0e0,0px 0px 0px #e0e0e0,2px 0px 5px #e0e0e0,0px 2px 5px #e0e0e0;
 
 }
@@ -709,13 +710,49 @@ a.intro-icon:hover {
 
 
 
-.tooltip {
+/*.tooltip {
 	position: absolute;
 
 	color: #000;
 	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
+}*/
+
+
+
+
+.list-more {
+	position: absolute;
+	left: 250px;
+	bottom: -50px;
+
+	width: 500px;
+	height: 35px;
+	margin-right: 20px;
+
+	font-size: 0;
+	line-height: 35px;
+	text-align: left;
+
+	background-color: rgb(254,120,117);
+}
+
+.list-more a {
+	display: inline-block;
+
+	width: 33.3%;
+
+	text-align: center;
+
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+.list-more a:hover {
+	color: #fff;
 }
 
 
